@@ -280,8 +280,9 @@ body{
 /* //////////////////////////////////  div textbox container //////////////////////////////////*/
 
 #textbox_container{
-    display: inline-block;
-    height: 630px;
+    float: left;
+    margin-top: 5%;
+    height: 670px;
     width: 80px;
     margin-left: 13px;
 }
@@ -290,7 +291,7 @@ body{
 #div_for_textbox_head{
     width: 80px;
     height: 80px;
-    margin-top: 75px;
+    margin-bottom: 35px;
 }
 
 #div_for_textbox_head > input{
@@ -310,7 +311,7 @@ body{
 #div_for_textbox_chest{
     width: 80px;
     height: 80px;
-    margin-top: 46px;
+    margin-bottom: 5px;
 }
 
 #div_for_textbox_chest > input{
@@ -329,7 +330,7 @@ body{
 #div_for_textbox_waist{
     width: 80px;
     height: 80px;
-    margin-top: 7px;
+    margin-bottom: 220px;
 }
 
 #div_for_textbox_waist > input{
@@ -348,7 +349,6 @@ body{
 #div_for_textbox_feet{
     width: 80px;
     height: 80px;
-    margin-top: 257px;
 }
 
 #div_for_textbox_feet > input{
@@ -368,5 +368,385 @@ body{
 /* WIP arrows */
 
 #arrow_container{
+    float: left;
+    height: 670px;
+    width: 100px;
+    margin-top: 5.3%;
+    margin-left: 3px;
+}
 
+#head_arrow{
+    margin-bottom: 45px;
+}
+
+#chest_arrow{
+    margin-bottom: 15px;
+}
+
+#waist_arrow{
+    margin-bottom: 240px;
+}
+
+/* //////////////////////////////////  images containers //////////////////////////////////*/
+
+#image_container_left_side{
+    float: left;
+    margin-top: 6%;
+}
+
+#image_container_right_side{
+    float: left;
+    margin-top: 3.5%;
+    margin-left: 125px;
+}
+
+/* /////////////////////////////////// containers for results //////////////////////////////////*/
+
+#div_results_container{
+    float: left;
+    width: 214px;
+    height: 643px;
+    margin-top: 5%;
+    margin-left: 65px;
+    text-align: center;
+}
+
+#div_head_results_container{
+    width: inherit;
+    height: 137px;
+    margin-bottom: 22px;
+}
+
+#div_chest_results_container{
+    width: inherit;
+    height: 137px;
+    margin-bottom: 22px;
+}
+
+#div_waist_results_container{
+    width: inherit;
+    height: 137px;
+    margin-bottom: 22px;
+}
+
+#div_feet_results_container{
+    width: inherit;
+    height: 137px;
+    margin-bottom: 22px;
+}
+
+/* /////////////////////////////////// labels for results //////////////////////////////////*/
+
+#lbl_for_title_head_result{
+    display: block;
+    width: 130px;
+    height: 33px;
+    text-align: center;
+    margin: 0px auto 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+
+#lbl_for_universal_head_result{
+    overflow: hidden;
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    margin-left: 0px;
+    margin-bottom: 18px;
+    background-color: #C7E1B8;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+#lbl_for_uk_head_result{
+    overflow: hidden;
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    margin-bottom: 18px;
+    margin-left: 5px;
+    background-color: #C7E1B8;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+#lbl_for_us_head_result{
+    overflow: hidden;
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    margin-left: 0px; 
+    background-color: #C7E1B8;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+#lbl_for_eu_head_result{
+    overflow: hidden;
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    background-color: #C7E1B8;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    margin-left: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+/* /////////////////////////////////// labels for chest results //////////////////////////////////*/
+
+#lbl_for_title_chest_result{
+    display: block;
+    width: 170px;
+    height: 33px;
+    text-align: center;
+    margin: 0px auto 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#lbl_for_universal_chest_result{
+    overflow: hidden;
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    margin-left: 0px;
+    margin-bottom: 18px;
+    background-color: #C7E1B8;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+#lbl_for_uk_chest_result{
+    overflow: hidden;
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    margin-bottom: 18px;
+    margin-left: 5px;
+    background-color: #C7E1B8;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+#lbl_for_us_chest_result{
+    overflow: hidden;
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    margin-left: 0px; 
+    background-color: #C7E1B8;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+#lbl_for_it_chest_result{
+
+}
+
+#lbl_for_eu_chest_result{
+    overflow: hidden;
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    background-color: #C7E1B8;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    margin-left: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+/* /////////////////////////////////// labels for waist results //////////////////////////////////*/
+
+#lbl_for_title_waist_result{
+    display: block;
+    width: 170px;
+    height: 33px;
+    text-align: center;
+    margin: 0px auto 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#lbl_for_universal_waist_result{
+    overflow: hidden;
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    margin-left: 0px;
+    margin-bottom: 18px;
+    background-color: #C7E1B8;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+#lbl_for_uk_waist_result{
+    overflow: hidden;
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    margin-bottom: 18px;
+    margin-left: 5px;
+    background-color: #C7E1B8;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+#lbl_for_us_waist_result{
+    overflow: hidden;
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    margin-left: 0px; 
+    background-color: #C7E1B8;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+#lbl_for_it_waist_result{
+
+}
+
+#lbl_for_eu_waist_result{
+    overflow: hidden;
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    background-color: #C7E1B8;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    margin-left: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+}
+/* /////////////////////////////////// labels for feet results //////////////////////////////////*/
+
+#lbl_for_title_feet_result{
+    display: block;
+    width: 150px;
+    height: 33px;
+    text-align: center;
+    margin: 0px auto 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#lbl_for_universal_feet_result{
+    overflow: hidden;
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    margin-left: 0px;
+    margin-bottom: 18px;
+    background-color: #C7E1B8;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+#lbl_for_uk_feet_result{
+    overflow: hidden;
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    margin-bottom: 18px;
+    margin-left: 5px;
+    background-color: #C7E1B8;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+#lbl_for_us_feet_result{
+    overflow: hidden;
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    margin-left: 0px; 
+    background-color: #C7E1B8;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+#lbl_for_it_feet_result{
+
+}
+
+#lbl_for_eu_feet_result{
+    overflow: hidden;
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    background-color: #C7E1B8;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    margin-left: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 22px;
 }
