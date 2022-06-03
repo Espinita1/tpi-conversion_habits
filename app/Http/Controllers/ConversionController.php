@@ -10,4 +10,9 @@ class ConversionController extends Controller
     {
         return view('conversion');
     }
+
+    public function Help()
+    {
+        return view('help');
+    }
 }

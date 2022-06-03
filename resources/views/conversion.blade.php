@@ -20,38 +20,44 @@
                     <label for="">Choissisez la mesure</label>
                 </div>
                 <div id="div_measurements_container">
-                    <div id="div_for_universal_label" onclick="ColorChange('lightgreen','universal');">
-                        <label id="lbl_for_universal_measure">U</label>
+                    <div id="div_for_universal_label">
+                        <label for="U" id="lbl_for_universal_measure">U</label>
+                        <input type="hidden" id="label_universal" value="U">
                     </div>
-                    <div id="div_for_centimeters_label" onclick="ColorChange('lightgreen','cm');">
-                        <label id="lbl_for_centimeters_measure">CM</label>
+                    <div id="div_for_centimeters_label">
+                        <label for="CM" id="lbl_for_centimeters_measure">CM</label>
+                        <input type="hidden" id="label_cm" value="CM">
                     </div>
-                    <div id="div_for_eu_label" onclick="ColorChange('lightgreen','eu');">
-                        <label id="lbl_for_eu_measurements">EU</label>
+                    <div id="div_for_eu_label">
+                        <label for="EU" id="lbl_for_eu_measurements">EU</label>
+                        <input type="hidden" id="label_eu" value"EU">
                     </div>
-                    <div id="div_for_us_label" onclick="ColorChange('lightgreen','us');">
-                    <label id="lbl_for_us_measure">US</label>
+                    <div id="div_for_us_label">
+                        <label for="US" id="lbl_for_us_measure">US</label>
+                        <input type="hidden" id="label_us" value="US">
                     </div>
-                    <div id="div_for_uk_label" onclick="ColorChange('lightgreen','uk');">
-                        <label id="lbl_for_uk_measurements">UK</label>
+                    <div id="div_for_uk_label">
+                        <label for="UK" id="lbl_for_uk_measurements">UK</label>
+                        <input type="hidden" id="label_uk" value="UK">
                     </div>
-                    <div id="div_for_it_label" onclick="ColorChange('lightgreen','it');">
-                        <label id="lbl_for_it_measurement">IT</label>
+                    <div id="div_for_it_label" for=IT>
+                        <label for="IT" id="lbl_for_it_measurement">IT</label>
+                        <input type="hidden" id="label_it" value="IT">
                     </div>
                 </div>
             </div>
             <div id="textbox_container">
                 <div id="div_for_textbox_head">
-                    <input type="text" name="headMeasure">
+                    <input id="inpt_txt_head" type="text" name="headMeasure">
                 </div>
                 <div id="div_for_textbox_chest">
-                    <input type="text" name="chestMeasure">
+                    <input id="inpt_txt_chest" type="text" name="chestMeasure">
                 </div>
                 <div id="div_for_textbox_waist">
-                    <input type="text" name="waistMeasure">
+                    <input id="inpt_txt_waist" type="text" name="waistMeasure">
                 </div>
                 <div id="div_for_textbox_feet">
-                    <input type="text" name="feetMeasure">
+                    <input id="inpt_txt_feet" type="text" name="feetMeasure">
                 </div>
             </div>
             <div id="arrow_container">

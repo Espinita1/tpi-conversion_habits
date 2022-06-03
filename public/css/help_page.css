@@ -1,0 +1,112 @@
+body{
+    width: 1440px;
+    height: 1024px;
+    margin: auto;
+}
+
+/* ////////////////////////////////// title divs ////////////////////////////////// */
+
+#div_titles_container{
+    width: auto;
+    min-height: 140px;
+    top: 50px;
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#div_titre_page{
+    width: 688px;
+    height: 140px;
+    float: left;
+    background: #9BAFB6;
+    border-radius: 5px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-right: 8px;
+}
+
+#div_titre_page > h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ////////////////////////////////// Button switch to help ////////////////////////////////// */
+
+#div_button_switch_to_help {
+    float: left;
+    margin-top: 4.9%;
+    width: 340px;
+    height: 70px;
+    border-radius: 5px;
+    margin-left: 8px;
+    margin-right: 8px;
+    background: #2BBDEB;
+    bottom: 0px;
+    border-collapse: inherit;
+}
+
+#button_to_help_page{
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    background: inherit;
+    border: 0;
+    font-size: 30px;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+/* ////////////////////////////////// Button for stats page //////////////////////////////////*/
+
+#div_button_switch_to_stats{
+    float: left;
+    width: 340px;
+    height: 70px;
+    margin-top: 4.9%;
+    margin-left: 8px;
+    background: #2BBDEB;
+    border-radius: 5px;
+}
+
+#button_to_page_statistique{
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    background: inherit;
+    border: 0;
+    font-size: 30px;
+    font-style: normal;;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+#div_rectangle_background{
+    margin-left: 20px;
+    width: 1400px;
+    height: 770px;
+    background-color: #D6D6D6;
+    margin-top: 46px;
+    margin-right: 20px;
+    border-radius: 25px;
+}
+
+#top_text_aide{
+    padding-top: 40px;
+    margin-left: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+}
+
+.text_for_help{
+    margin-left: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+
+}

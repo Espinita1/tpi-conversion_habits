@@ -15,3 +15,4 @@ use App\Http\Controllers\ConversionController;
 */
 
 Route::get('/', [ConversionController::class, 'Index', 404]);
+Route::get('/Aide', [ConversionController::class, 'Help', 404]);
