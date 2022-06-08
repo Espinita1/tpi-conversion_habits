@@ -1,6 +1,33 @@
+/******************************************************************************
+** Conversion                                                                **
+**                                                                           **
+** Lieu      :  ETML                                                         **
+** Auteur    :  Jordy guzman                                                 **
+** Date      :  08.06.2022                                                   **
+**                                                                           **
+** Modifications                                                             **
+**   Auteur  :  Jordy Guzman                                                 **
+**   Version :  0.5                                                          **
+**   Date    :  08.06.2022                                                   **
+**   Raisons :  Comments                                                     **
+**                                                                           **
+******************************************************************************/
+
+/******************************************************************************
+** DESCRIPTION                                                               **                      
+** This project serves as a size conversion for clothes and body measures    **
+** ranging from head to toes.                                                **
+** This javascript file serves as a "main" for the functions that will be    **     
+** called for a size conversion from the html page.                          **
+**                                                                           **
+******************************************************************************/
 // This function adds an event that will wait for the html document to load then execute de code inside
 document.addEventListener("DOMContentLoaded", function(event){
     console.log("DOM fully loaded");
+
+// get divs and buttons from the title //
+    
+    var button_to_help_page = document.getElementById('button_to_help_page');
 
 // get divs from html, get from the element by its ID and assign it to a variable //
 
@@ -53,7 +80,8 @@ document.addEventListener("DOMContentLoaded", function(event){
 
 ///////////////////////////////////////////////////////////////// Variables ///////////////////////////////////////////////////////////////////////////
 
-    // The dictionnary for sizing values//
+    // The dictionnary for size values //
+    // This dictionnary contains only the chest size for woman //
     let sizes_dict = 
     {
         "dctnnry_sizes" :
@@ -130,6 +158,10 @@ document.addEventListener("DOMContentLoaded", function(event){
         }
     }
 
+    //console.log(sizes_dict); test variable for dictionnary
+    //var ukmeasures = sizes_dict.dctnnry_sizes.chest.uk[4][2]; test variable for dictionnary
+    //console.log(ukmeasures); test variable for dictionnary
+
     var xs_size_equivalent = sizes_dict.dctnnry_sizes.chest.u.XS
     var s_size_equivalent = sizes_dict.dctnnry_sizes.chest.u.S
     var m_size_equivalent = sizes_dict.dctnnry_sizes.chest.u.M
@@ -138,11 +170,14 @@ document.addEventListener("DOMContentLoaded", function(event){
 
 ///////////////////////////////////////////////////////////////// Variables ///////////////////////////////////////////////////////////////////////////
 
+///////////////////////////////////////////////////////////////// Program ///////////////////////////////////////////////////////////////////////////
+
+    button_to_help_page.addEventListener("click", function(event) {
+        window.location = '/Aide';
+    });
+
     // Add a fonction to each one of these divs
-    //console.log(sizes_dict); test variable for dictionnary
-    //var ukmeasures = sizes_dict.dctnnry_sizes.chest.uk[4][2]; test variable for dictionnary
-    //console.log(ukmeasures); test variable for dictionnary
-    // Add an event listener to the label in the html that on click will change the color of the label //
+    // Add an event listener to the label in the html that on click will call the function that changes the color of the label //
 
     div_for_universal_label.addEventListener("click", function() {
         ColorChange("lightgreen", "u")});
@@ -162,10 +197,10 @@ document.addEventListener("DOMContentLoaded", function(event){
     div_for_it_label.addEventListener("click", function() {
         ColorChange("lightgreen", "it")});
 
-//    console.log(div_for_centimeters_label); test line
+    //    console.log(div_for_centimeters_label); test line
 
-    // Add a fonction to each one of these text boxes
-
+    // Add an event that calls the conversion function to each one of these text boxes each time that the user inputs something //
+    // It passes the textbox head value and the measure that's any selected size measure
     inpt_txt_head.addEventListener('input', function() {
         Conversion(inpt_txt_head.value, measure)
     })
@@ -250,18 +285,23 @@ document.addEventListener("DOMContentLoaded", function(event){
                 break;
         }
     }
-    
+
+    /* This function takes two parameters size {number of size: any number or universal measure: XL}
+     and measure: UK, U, US, EU, IT, when both parameters are passed it will enter in a switch to find the corresponding
+     value for the measure and then for the size outputting the result in a label */
     function Conversion (size, measure){
         //console.log(number, measure)// test line
         console.log(size, measure)
         switch(measure)
         {
-
+            // Universal case
             case 'U':
+                // Choose the correct size
                 switch(size)
                 {
                 case 'XS':
-                    console.log("I'm here");
+                    //console.log("I'm here"); Debugging test
+                    // Replace and Output the result on the result label by order
                     lbl_for_universal_chest_result.innerHTML = xs_size_equivalent[0];
                     lbl_for_uk_chest_result.innerHTML = xs_size_equivalent[1];
                     lbl_for_eu_chest_result.innerHTML = xs_size_equivalent[2];
@@ -295,7 +335,7 @@ document.addEventListener("DOMContentLoaded", function(event){
                     lbl_for_eu_chest_result.innerHTML = xl_size_equivalent[2];
                     lbl_for_us_chest_result.innerHTML = xl_size_equivalent[3]
                 break;
-                
+                // If it's not a valid value the default case is to break out of this switch
                 default:
                     break;
                 }
@@ -319,6 +359,7 @@ document.addEventListener("DOMContentLoaded", function(event){
 
                 break;
 
+            // If it's not a valid measure the default case is to break out of this switch
             default :
             break;
         }

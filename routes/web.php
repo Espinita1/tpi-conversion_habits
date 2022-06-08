@@ -14,5 +14,8 @@ use App\Http\Controllers\ConversionController;
 |
 */
 
+// Callle the function Index when when a request to the "/" root document is being requested, if there'es an error show 404 error
 Route::get('/', [ConversionController::class, 'Index', 404]);
+
+// Call the function Help in ConversionController when a request to the "/Aide" route is being requested, if there's an error show 404 error
 Route::get('/Aide', [ConversionController::class, 'Help', 404]);

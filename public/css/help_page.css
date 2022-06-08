@@ -25,7 +25,7 @@ body{
     justify-content: center;
     align-items: center;
     padding: 0;
-    margin-right: 8px;
+    margin-right: 0px;
 }
 
 #div_titre_page > h1 {
@@ -38,20 +38,19 @@ body{
 
 /* ////////////////////////////////// Button switch to help ////////////////////////////////// */
 
-#div_button_switch_to_help {
+#div_button_switch_to_conversion {
     float: left;
     margin-top: 4.9%;
     width: 340px;
     height: 70px;
     border-radius: 5px;
-    margin-left: 8px;
-    margin-right: 8px;
+    margin-left: 14px;
     background: #2BBDEB;
     bottom: 0px;
     border-collapse: inherit;
 }
 
-#button_to_help_page{
+#button_to_conversion_page{
     width: inherit;
     height: inherit;
     border-radius: inherit;
@@ -65,17 +64,17 @@ body{
 
 /* ////////////////////////////////// Button for stats page //////////////////////////////////*/
 
-#div_button_switch_to_stats{
+#div_button_switch_to_stats_page{
     float: left;
     width: 340px;
     height: 70px;
     margin-top: 4.9%;
-    margin-left: 8px;
+    margin-left: 18px;
     background: #2BBDEB;
     border-radius: 5px;
 }
 
-#button_to_page_statistique{
+#button_to_stats_page{
     width: inherit;
     height: inherit;
     border-radius: inherit;

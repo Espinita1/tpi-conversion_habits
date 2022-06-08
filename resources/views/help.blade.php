@@ -4,12 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/css/help_page.css">
+    <script src="/js/help_page.js"></script>
     <title>Aide</title>
 </head>
 
-<x-components-titles-conversion>
+<x-components-titles-help>
 
-</x-components-titles-conversion>
+</x-components-titles-help>
 
 <div id="div_rectangle_background">
     <p id="top_text_aide">Mesurez vos tailles et convertissez-les simplement.</p>
